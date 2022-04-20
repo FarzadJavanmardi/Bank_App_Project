@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanchedAlmond"
+    android:foregroundTint="#907DB3"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.05"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dollarpic"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp"></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Welcome to Login"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="italic|bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="18dp">
+
+                <RadioButton
+                    android:id="@+id/radioManager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Manager"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Client"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/txtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:textColorHint="#555555"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:text=""
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="24sp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="24dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Password"
+                android:textColorHint="#555555"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:text=""
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="132dp"
+                android:layout_marginRight="132dp"
+                android:textColor="@color/white"
+              android:backgroundTint="@color/cardview_dark_background"
+                android:gravity="center"
+                android:text="Login" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="Don,t have an account?"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="132dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="132dp"
+                android:gravity="center"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:text="Signin" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
